@@ -3,10 +3,7 @@ Tests for the GovInfo adapter.
 """
 from datetime import datetime
 
-import pytest
-import pytest_mock
 import requests
-from requests_mock.mocker import Mocker
 
 from shillelagh.adapters.api.govinfo import GovInfoAPI
 from shillelagh.backends.apsw.db import connect
