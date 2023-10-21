@@ -132,3 +132,7 @@ with open(os.path.join(dirname, "github_response.json"), encoding="utf-8") as fp
     github_response = json.load(fp)
 with open(os.path.join(dirname, "github_single_response.json"), encoding="utf-8") as fp:
     github_single_response = json.load(fp)
+with open(os.path.join(dirname, "govinfo_response.json"), encoding="utf-8") as fp:
+    govinfo_response = json.load(fp)
+with open(os.path.join(dirname, "govinfo_empty_response.json"), encoding="utf-8") as fp:
+    govinfo_empty_response = json.load(fp)

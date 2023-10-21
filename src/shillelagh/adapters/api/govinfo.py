@@ -2,6 +2,8 @@
 """
 An adapter for the Government Publishing Office GovInfo API.
 """
+# TODO: refactor to use urllib.parse.urljoin
+
 import re
 import urllib.parse
 from datetime import datetime
@@ -218,6 +220,9 @@ class GovInfoAPI(Adapter):
     # use them as the dictionary of columns.
     def get_columns(self) -> Dict[str, Field]:
         return self.columns
+
+    def _get_session(self):
+        return self._session
 
     # This method is used to return any extra metadata associated with the URI.
     # You can delete it instead of returning an empty dictionary, since that's
